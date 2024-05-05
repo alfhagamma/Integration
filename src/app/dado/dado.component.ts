@@ -31,4 +31,8 @@ export class DadoComponent implements OnInit {
   ngOnInit() {
     this.articles = this.articlesService.retornar();
   }
+
+  createAlert() {
+    alert('Hello World');
+  }
 }
