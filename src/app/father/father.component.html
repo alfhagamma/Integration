@@ -1,0 +1,21 @@
+<p>father works!</p>
+<hr>
+<app-react-form />
+<hr>
+<h3>Simpre form, plantillas</h3>
+<app-simpleform></app-simpleform>
+<hr>
+<app-son [priceInt] = "price" />
+
+<h4>Date of persons in father component</h4>
+<ul>
+    @for (name of names; track $index)  {
+    <li>{{ name.name}}</li>
+    }
+</ul>
+        
+<app-son [namesInSon]="names"></app-son>
+<hr>
+
+
+

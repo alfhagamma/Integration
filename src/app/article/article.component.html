@@ -1,0 +1,12 @@
+<table border="1">
+    <th>Code</th>
+    <th>Description</th>
+    <th>Price</th>
+    @for (article of articles; track article.codigo) {
+        <tr>
+            <td> {{ article.codigo }} </td>
+            <td> {{ article.descripcion  }} </td>
+            <td> {{ article.precio }} </td>
+        </tr>
+    }
+</table>
