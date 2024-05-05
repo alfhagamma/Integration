@@ -1,0 +1,11 @@
+<p>
+    <label for="">Actividad</label>
+    <input type="text" [formControl] = "actividad">
+</p>
+<p><button (click)="add()">Add</button></p>
+<ol>
+    @for (item of items; track $index) {
+        <li>{{ item.actividad }}</li>
+    }
+</ol>
+<p><button (click)="deleteAll()">All Delete</button></p>

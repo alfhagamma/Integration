@@ -1,0 +1,8 @@
+<h3>{{title}}</h3>
+
+<ul>
+    @for (article of articles; track $index) {
+    <li>{{ article.code }} -- {{ article.description }} -- {{ article.price }}</li>
+    }
+</ul>
+<button (click)="createAlert()">Click</button>
